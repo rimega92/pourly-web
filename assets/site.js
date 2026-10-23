@@ -5,9 +5,21 @@
   try { stored = localStorage.getItem("lang"); } catch (e) {}
   var preferred = (navigator.language || "es").toLowerCase().indexOf("es") === 0 ? "es" : "en";
 
+  // Screenshots exist per language: assets/screenshots/… (Spanish) and assets/screenshots/en/…
+  var shotBase = "assets/screenshots/";
+  function localizeScreenshots(lang) {
+    document.querySelectorAll('img[src*="' + shotBase + '"], source[srcset*="' + shotBase + '"]').forEach(function (element) {
+      var attribute = element.tagName === "IMG" ? "src" : "srcset";
+      if (!element.dataset.esPath) element.dataset.esPath = element.getAttribute(attribute);
+      var path = element.dataset.esPath;
+      element.setAttribute(attribute, lang === "es" ? path : path.replace(shotBase, shotBase + lang + "/"));
+    });
+  }
+
   function apply(lang) {
     root.setAttribute("data-lang", lang);
     root.setAttribute("lang", lang);
+    localizeScreenshots(lang);
     var title = root.getAttribute("data-title-" + lang);
     if (title) document.title = title;
     document.querySelectorAll(".lang-switch button").forEach(function (button) {
