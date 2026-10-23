@@ -1,0 +1,39 @@
+# Pourly · Web
+
+Static website for the Pourly iOS app (the app lives in `../Pourly`, a private repo). Public repo served by GitHub Pages from `main` / root at https://rimega92.github.io/pourly-web/. Plain HTML, CSS and a little JavaScript: no build step, no frameworks, no external fonts or scripts.
+
+The user writes in Spanish: answer in Spanish. Commit messages are in English.
+
+## Pages
+
+| File | Used as |
+|---|---|
+| `index.html` | Product page |
+| `privacy.html` | App Store Connect "Privacy Policy URL" and the link in the app's Settings |
+| `support.html` | App Store Connect "Support URL" and the link in the app's Settings; contact goes to this repo's GitHub Issues |
+
+Shared pieces are repeated in each page (header with nav, appearance and language switches; footer). Change all three together.
+
+## How it works
+
+- **Languages**: every text exists twice, `lang="es"` and `lang="en"`; CSS hides the inactive one and `assets/site.js` picks the visitor's language and remembers it. Never add text in one language only.
+- **Appearance**: automatic (device), light or dark. Colors are CSS variables in `assets/style.css` (the app's Espresso palette); dark values are defined twice (the `prefers-color-scheme` block and `:root[data-theme="dark"]`) and must stay in sync.
+- **Screenshots**: `assets/screenshots/` (Spanish) and `assets/screenshots/en/` (English), each with `dark/`. `site.js` swaps them by language and forces the dark ones with the appearance switch. They come from the app repo's `docs/screenshots/` (`/screenshots` skill there); the widget images are captured by hand.
+
+## Rules
+
+- The privacy policy must describe exactly what the app does. If the app's data handling changes, update `privacy.html` (both languages) and its "last updated" date before that app version ships.
+- Support answers must match the app's real button and screen names in each language.
+- No real people's names, no trackers, analytics or third-party embeds.
+
+## Check before committing
+
+Serve locally and look at phone and desktop widths, light and dark, ES and EN:
+
+```bash
+python3 -m http.server 8765   # http://localhost:8765/
+```
+
+Headless Edge can capture a page (`--headless=new --screenshot=… --window-size=1280,2600 <url>`); it won't go narrower than ~500 px, so for phone width load the page in a 390 px `<iframe>`.
+
+The user commits and pushes; GitHub Pages updates a minute or two after the push.

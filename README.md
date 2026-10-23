@@ -34,3 +34,7 @@ The support page sends people to this repository's **Issues**, so keep Issues tu
 - Screenshots come from the app repo (`scripts/screenshots.sh` → `docs/screenshots/`); copy them into `assets/screenshots/`.
 - When the app changes how it handles data, update `privacy.html` and its "last updated" date **before** releasing that version.
 - Language: each text exists twice, with `lang="es"` and `lang="en"`; `assets/site.js` shows the visitor's language and remembers their choice.
+
+## Working with Claude Code
+
+[`CLAUDE.md`](CLAUDE.md) describes how the site is built (languages, appearance, screenshots) and the rules it must keep, and is loaded at the start of every Claude Code session.
