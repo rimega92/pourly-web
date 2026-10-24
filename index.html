@@ -1,15 +1,25 @@
 <!doctype html>
-<html lang="es" data-lang="es" data-title-es="Pourly · Café de filtro y prensa francesa, bien hecho" data-title-en="Pourly · Pour-over and French press, done right">
+<html lang="es" data-lang="es" data-description-es="Pourly calcula el ratio, te guía en cada vertido con un temporizador visual y guarda cada taza en tu diario. Sin cuentas, sin anuncios y sin conexión." data-description-en="Pourly works out the ratio, guides every pour with a visual timer and keeps every cup in your journal. No accounts, no ads and no internet connection." data-title-es="Pourly · Café de filtro y prensa francesa, bien hecho" data-title-en="Pourly · Pour-over and French press, done right">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Pourly · Café de filtro y prensa francesa, bien hecho</title>
   <meta name="description" content="Pourly calcula el ratio, te guía en cada vertido con un temporizador visual y guarda cada taza en tu diario. Sin cuentas, sin anuncios y sin conexión.">
-  <meta name="theme-color" content="#F6F1EA" media="(prefers-color-scheme: light)" data-light>
-  <meta name="theme-color" content="#13100E" media="(prefers-color-scheme: dark)" data-dark>
+  <link rel="canonical" href="https://rimega92.github.io/pourly-web/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pourly">
   <meta property="og:title" content="Pourly">
   <meta property="og:description" content="Café de filtro y prensa francesa, bien hecho. Ratio, temporizador guiado y diario, todo en tu iPhone.">
-  <meta property="og:image" content="assets/icon.png">
+  <meta property="og:url" content="https://rimega92.github.io/pourly-web/">
+  <meta property="og:image" content="https://rimega92.github.io/pourly-web/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pourly: calculadora de ratio y temporizador guiado en el iPhone">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F6F1EA" media="(prefers-color-scheme: light)" data-light>
+  <meta name="theme-color" content="#13100E" media="(prefers-color-scheme: dark)" data-dark>
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/style.css">
@@ -86,10 +96,17 @@
         </figure>
         <figure>
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/dark/pressTimer.jpg">
-            <img src="assets/screenshots/pressTimer.jpg" alt="Prensa francesa" loading="lazy" width="230" height="500">
+            <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/dark/press.jpg">
+            <img src="assets/screenshots/press.jpg" alt="Plan de prensa francesa" loading="lazy" width="230" height="500">
           </picture>
-          <figcaption><span lang="es">Prensa francesa</span><span lang="en">French press</span></figcaption>
+          <figcaption><span lang="es">Plan de prensa francesa</span><span lang="en">French press plan</span></figcaption>
+        </figure>
+        <figure>
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/dark/pressTimer.jpg">
+            <img src="assets/screenshots/pressTimer.jpg" alt="Temporizador de prensa francesa" loading="lazy" width="230" height="500">
+          </picture>
+          <figcaption><span lang="es">Temporizador de prensa</span><span lang="en">French press timer</span></figcaption>
         </figure>
         <figure>
           <picture>
@@ -150,14 +167,15 @@
           <p lang="en">A widget for the Home Screen, Lock Screen and StandBy. Six themes in light and dark with matching icons. In English and Spanish, with grams, ounces or cups.</p>
         </div>
       </div>
+      <p class="section-more"><a lang="es" href="changelog.html#en-camino">¿Qué viene después? Mira lo que estamos preparando →</a><a lang="en" href="changelog.html#coming-next">What's next? See what we're working on →</a></p>
     </section>
 
     <section class="wrap" aria-labelledby="widget">
       <div class="split">
         <div>
-          <h2 id="widget"><span lang="es">Tu receta, siempre a mano</span><span lang="en">Your recipe, always at hand</span></h2>
-          <p lang="es">El widget muestra el ratio, el café y el agua de tu receta. Cambia la dosis con − y +, o elige otro ratio, sin abrir la app.</p>
-          <p lang="en">The widget shows the ratio, coffee and water of your recipe. Change the dose with − and +, or pick another ratio, without opening the app.</p>
+          <h2 id="widget"><span lang="es">Tu ratio, siempre a mano</span><span lang="en">Your ratio, always at hand</span></h2>
+          <p lang="es">El widget muestra el ratio, el café y el agua. Cambia la dosis con − y +, o elige otro ratio, sin abrir la app.</p>
+          <p lang="en">The widget shows the ratio, coffee and water. Change the dose with − and +, or pick another ratio, without opening the app.</p>
           <ul class="checks">
             <li><span lang="es">Pantalla de inicio, en tamaño pequeño y mediano</span><span lang="en">Home Screen, in small and medium sizes</span></li>
             <li><span lang="es">Pantalla de bloqueo y StandBy</span><span lang="en">Lock Screen and StandBy</span></li>
@@ -189,6 +207,7 @@
       <nav aria-label="Pie de página">
         <a href="privacy.html"><span lang="es">Privacidad</span><span lang="en">Privacy</span></a>
         <a href="support.html"><span lang="es">Soporte</span><span lang="en">Support</span></a>
+        <a href="changelog.html"><span lang="es">Novedades</span><span lang="en">What's new</span></a>
       </nav>
     </div>
   </footer>

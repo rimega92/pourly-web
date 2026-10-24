@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es" data-lang="es" data-description-es="Las novedades de cada versión de Pourly y lo que viene después." data-description-en="What's new in each version of Pourly, and what's coming next." data-title-es="Novedades · Pourly" data-title-en="What's new · Pourly">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Novedades · Pourly</title>
+  <meta name="description" content="Las novedades de cada versión de Pourly y lo que viene después.">
+  <link rel="canonical" href="https://rimega92.github.io/pourly-web/changelog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pourly">
+  <meta property="og:title" content="Novedades · Pourly">
+  <meta property="og:description" content="Las novedades de cada versión de Pourly y lo que viene después.">
+  <meta property="og:url" content="https://rimega92.github.io/pourly-web/changelog.html">
+  <meta property="og:image" content="https://rimega92.github.io/pourly-web/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pourly: calculadora de ratio y temporizador guiado en el iPhone">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F6F1EA" media="(prefers-color-scheme: light)" data-light>
+  <meta name="theme-color" content="#13100E" media="(prefers-color-scheme: dark)" data-dark>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Apply a saved light/dark choice before the page paints.
+    try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/icon.png" alt="" width="32" height="32"><span>Pourly</span></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="./"><span lang="es">Inicio</span><span lang="en">Home</span></a>
+        <a href="privacy.html"><span lang="es">Privacidad</span><span lang="en">Privacy</span></a>
+        <a href="support.html"><span lang="es">Soporte</span><span lang="en">Support</span></a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Apariencia / Appearance">
+        <button type="button" data-theme="light" aria-pressed="false" title="Claro / Light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span class="sr-only">Claro</span></button>
+        <button type="button" data-theme="auto" aria-pressed="true" title="Automático / Automatic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span class="sr-only">Automático</span></button>
+        <button type="button" data-theme="dark" aria-pressed="false" title="Oscuro / Dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><span class="sr-only">Oscuro</span></button>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Spanish -->
+    <article class="doc" lang="es">
+      <h1>Novedades</h1>
+      <p class="updated">Lo que trae cada versión de Pourly y lo que viene después.</p>
+
+      <h2 id="en-camino">En camino</h2>
+      <p>Esto es en lo que estamos trabajando para las próximas versiones. Sin fechas: cada función sale cuando está bien hecha.</p>
+      <div class="grid upcoming">
+        <div class="card">
+          <div class="emoji" aria-hidden="true">🔒</div>
+          <h3>Live Activity y avisos</h3>
+          <p>Sigue el temporizador en la pantalla de bloqueo y en la Dynamic Island, con un aviso en cada cambio de fase aunque el iPhone esté bloqueado.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">📤</div>
+          <h3>Exportar el diario</h3>
+          <p>Descarga todas tus preparaciones en un archivo CSV para abrirlas en una hoja de cálculo o guardarlas donde quieras.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">☁️</div>
+          <h3>Copia en iCloud</h3>
+          <p>Copia y sincronización opcionales con tu propia cuenta de iCloud. Pourly seguirá sin ver tus datos.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">✍️</div>
+          <h3>Tus propias recetas</h3>
+          <p>Guarda tus recetas y sus variantes para repetirlas con un toque.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">☕️</div>
+          <h3>Más métodos</h3>
+          <p>Más métodos de filtrado y de inmersión, cada uno con sus pasos y su temporizador.</p>
+        </div>
+      </div>
+
+      <h2>Versión 1.0 · Próximamente</h2>
+      <p>La primera versión de Pourly.</p>
+      <ul>
+        <li><strong>Calculadora de ratio</strong> con ratios clásicos y propios, una rueda para afinar a la décima y cuánto café acaba en la taza.</li>
+        <li><strong>Preparar</strong> filtrados y prensa francesa, empezando por la temperatura del agua.</li>
+        <li><strong>Temporizador guiado</strong> a pantalla completa, con modo báscula y un aviso antes de cada cambio de fase.</li>
+        <li><strong>Recetas de referencia</strong>: tres para filtro y dos para prensa francesa, escaladas a tu dosis.</li>
+        <li><strong>Diario y tus cafés</strong>, con valoraciones, notas de sabor, molienda y frescura según la fecha de tueste.</li>
+        <li><strong>Widget</strong> para inicio, pantalla de bloqueo y StandBy.</li>
+        <li>Seis temas con iconos a juego, en español e inglés.</li>
+      </ul>
+    </article>
+
+    <!-- English -->
+    <article class="doc" lang="en">
+      <h1>What's new</h1>
+      <p class="updated">What each version of Pourly brings, and what's coming next.</p>
+
+      <h2 id="coming-next">Coming next</h2>
+      <p>This is what we're working on for upcoming versions. No dates: each feature ships when it's done right.</p>
+      <div class="grid upcoming">
+        <div class="card">
+          <div class="emoji" aria-hidden="true">🔒</div>
+          <h3>Live Activity and alerts</h3>
+          <p>Follow the timer on the Lock Screen and in the Dynamic Island, with an alert at every phase change even when your iPhone is locked.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">📤</div>
+          <h3>Export your journal</h3>
+          <p>Download all your brews as a CSV file to open in a spreadsheet or keep wherever you like.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">☁️</div>
+          <h3>iCloud backup</h3>
+          <p>Optional backup and sync with your own iCloud account. Pourly still won't see your data.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">✍️</div>
+          <h3>Your own recipes</h3>
+          <p>Save your recipes and their variations to repeat them with one tap.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">☕️</div>
+          <h3>More methods</h3>
+          <p>More pour-over and immersion methods, each with its own steps and timer.</p>
+        </div>
+      </div>
+
+      <h2>Version 1.0 · Coming soon</h2>
+      <p>The first version of Pourly.</p>
+      <ul>
+        <li><strong>Ratio calculator</strong> with classic and custom ratios, a dial to fine-tune to a tenth and how much coffee ends up in the cup.</li>
+        <li><strong>Brew</strong> pour-over and French press, starting with the water temperature.</li>
+        <li><strong>Guided timer</strong> in full screen, with a scale mode and a heads-up before every phase change.</li>
+        <li><strong>Benchmark recipes</strong>: three for pour-over and two for French press, scaled to your dose.</li>
+        <li><strong>Journal and your coffees</strong>, with ratings, flavor notes, grind and freshness from the roast date.</li>
+        <li><strong>Widget</strong> for the Home Screen, Lock Screen and StandBy.</li>
+        <li>Six themes with matching icons, in English and Spanish.</li>
+      </ul>
+    </article>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Pourly</span>
+      <nav aria-label="Pie de página">
+        <a href="privacy.html"><span lang="es">Privacidad</span><span lang="en">Privacy</span></a>
+        <a href="support.html"><span lang="es">Soporte</span><span lang="en">Support</span></a>
+        <a href="changelog.html"><span lang="es">Novedades</span><span lang="en">What's new</span></a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

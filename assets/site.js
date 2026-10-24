@@ -22,6 +22,9 @@
     localizeScreenshots(lang);
     var title = root.getAttribute("data-title-" + lang);
     if (title) document.title = title;
+    var description = root.getAttribute("data-description-" + lang);
+    var descriptionMeta = document.querySelector('meta[name="description"]');
+    if (description && descriptionMeta) descriptionMeta.content = description;
     document.querySelectorAll(".lang-switch button").forEach(function (button) {
       button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
     });

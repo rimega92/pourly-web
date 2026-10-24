@@ -333,18 +333,17 @@ a.pill:hover { filter: brightness(1.06); }
   color: var(--text-secondary);
 }
 
-/* Wide screens: two rows of three, no scrolling. */
+/* Wide screens: rows of four, the last one centered, no scrolling. */
 @media (min-width: 900px) {
   .shots {
-    display: grid;
-    grid-template-columns: repeat(3, 240px);
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px 48px;
+    gap: 40px 32px;
     overflow: visible;
     margin-inline: 0;
     padding-inline: 0;
   }
-  .shots figure { width: auto; }
+  .shots figure { width: min(210px, calc((100% - 3 * 32px) / 4)); }
 }
 
 /* Sections */
@@ -387,6 +386,18 @@ section { padding-block: 56px; }
 
 .card h3 { margin-bottom: 0.4em; }
 .card p { margin: 0; color: var(--text-secondary); font-size: 0.97rem; }
+
+.section-more {
+  text-align: center;
+  margin: 28px 0 0;
+  font-weight: 600;
+}
+
+/* Upcoming features on the changelog: cards inside the long-form column. */
+.doc .upcoming { margin: 20px 0 8px; }
+.doc .upcoming .card h3 { font-size: 1.1rem; }
+/* An odd card out spans the row instead of sitting alone on the left. */
+.doc .upcoming .card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 
 /* Text beside a phone screenshot; stacked on phones. */
 .split {
@@ -475,6 +486,11 @@ section { padding-block: 56px; }
 .doc h2 {
   font-size: 1.45rem;
   margin-top: 40px;
+}
+
+.doc.not-found {
+  text-align: center;
+  padding-block: 96px 64px;
 }
 
 .doc ul { padding-left: 1.2em; }

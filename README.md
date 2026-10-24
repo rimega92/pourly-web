@@ -7,6 +7,8 @@ Product site for the Pourly iOS app, with its privacy policy and support page, i
 | Home | `index.html` | Product page |
 | Privacy | `privacy.html` | App Store Connect "Privacy Policy URL" and the link inside the app |
 | Support | `support.html` | App Store Connect "Support URL" |
+| What's new | `changelog.html` | Release notes, one entry per version |
+| Not found | `404.html` | Served by GitHub Pages for missing paths |
 
 ## Publish with GitHub Pages
 
