@@ -14,7 +14,7 @@ The user writes in Spanish: answer in Spanish. Commit messages are in English.
 | `changelog.html` | What's new in each app version (linked from the footer); add an entry, and the date once it ships, for every release |
 | `404.html` | GitHub Pages' "not found" page; it's served at any missing path, so its links are absolute (`/pourly-web/…`) |
 
-Shared pieces are repeated in each page (header with nav, appearance and language switches; footer; Open Graph tags pointing to `assets/og-image.jpg` with absolute URLs, as link previews need). Change them all together.
+Shared pieces are repeated in each page (header with nav, appearance and language switches; footer, with the link to the app's Instagram, [@pourly.app](https://www.instagram.com/pourly.app), and its glyph as inline SVG; Open Graph tags pointing to `assets/og-image.jpg` with absolute URLs, as link previews need). Change them all together.
 
 ## How it works
 

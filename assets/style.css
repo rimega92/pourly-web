@@ -543,8 +543,24 @@ details p { margin: 12px 0 0; color: var(--text-secondary); }
   justify-content: space-between;
 }
 
-.site-footer nav { display: flex; gap: 18px; }
+.site-footer nav { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; }
 .site-footer a { color: var(--text-secondary); }
+
+/* Link to the app's Instagram, with its glyph. */
+.site-footer .social {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.site-footer .social:hover { color: var(--text); }
+
+.site-footer .social svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
 
 .sr-only {
   position: absolute;
