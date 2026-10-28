@@ -29,7 +29,7 @@ Product site for the Pourly iOS app, with its privacy policy and support page, i
    - https://rimega92.github.io/pourly-web/privacy.html
    - https://rimega92.github.io/pourly-web/support.html
 
-The support page sends people to this repository's **Issues**, so keep Issues turned on (Settings → General → Features).
+The support page's main contact is the email **hola.pourly@gmail.com**; it also offers this repository's **Issues** for people with a GitHub account, so keep Issues turned on (Settings → General → Features).
 
 ## Updating
 

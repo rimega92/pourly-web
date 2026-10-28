@@ -10,7 +10,7 @@ The user writes in Spanish: answer in Spanish. Commit messages are in English.
 |---|---|
 | `index.html` | Product page |
 | `privacy.html` | App Store Connect "Privacy Policy URL" and the link in the app's Settings |
-| `support.html` | App Store Connect "Support URL" and the link in the app's Settings; contact goes to this repo's GitHub Issues |
+| `support.html` | App Store Connect "Support URL" and the link in the app's Settings; contact is the email `hola.pourly@gmail.com` (main button, `mailto:` with a prefilled subject), with this repo's GitHub Issues as a secondary option |
 | `changelog.html` | What's new in each app version (linked from the footer); add an entry, and the date once it ships, for every release |
 | `404.html` | GitHub Pages' "not found" page; it's served at any missing path, so its links are absolute (`/pourly-web/…`) |
 
